@@ -52,7 +52,6 @@
     <Compile Include="components\Pointer.cs" />
     <Compile Include="components\Tower.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="components\myButton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -51,26 +51,6 @@ namespace TestMiniProj_1
 
 
 
-        //public void HandleInput()
-        //{
-        //    // 处理鼠标交互
-        //    //HandleMouseInput(window);
-
-        //    // 处理键盘交互（空格键）
-        //    if (AllowSpaceKeyTrigger)
-        //    {
-        //        bool isSpacePressed = Keyboard.IsKeyPressed(Keyboard.Key.Space);
-
-        //        if (isSpacePressed && !_wasSpacePressed)
-        //        {
-        //            // 触发点击事件
-        //            //_currentState = ButtonState.Pressed;
-        //            OnClick?.Invoke();
-        //        }
-        //        _wasSpacePressed = isSpacePressed;
-        //    }
-        //}
-
         //Tower need to handle mouse input
         public void HandleMouseInput(RenderWindow window)
         {
@@ -138,6 +118,7 @@ namespace TestMiniProj_1
                         return false;
                     }
                 }
+
                 //eg. if count=0, this disk is the first one, so its position is 0
                 disk.Position = new Vector2f(this.Position.X, this.Position.Y - count * disk.Size.Y); // Adjust the Y position for stacking
                 //Console.WriteLine("Tower add disk, Tower Position:" + this.Position.X + " , " + this.Position.Y + " , Origin: " + this.Origin.X + " , " + this.Origin.Y);
